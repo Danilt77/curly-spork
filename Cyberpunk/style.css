@@ -1,0 +1,730 @@
+@font-face {
+    font-family: "Archangelsk";
+    src: url(fonts/ofont.ru_Archangelsk.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto Regular";
+    font-weight: 400;
+    font-size: 18px;
+}
+
+header {
+    background-image: url(images/header-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1000px;
+    background-size: cover;
+}
+
+.content {
+    margin: 0 16.667%;
+    position: relative;
+    height: 100%;
+}
+
+.upper-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    grid-gap: 45px;
+}
+
+.social a {
+    display: block;
+}
+
+.platforms {
+    background-color: #F8F200;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: "Archangelsk";
+    font-size: 62px;
+    width: 624px;
+    height: 369px;
+    padding: 70px;
+    box-sizing: border-box;
+    flex-shrink: 1;
+    clip-path: 
+        polygon(
+            0% 15%,     /* верхняя левая */
+            10% 0%,     /* верхняя левая */
+            100% 0%,    /* верхняя правая */
+            100% 0%,   /* верхняя правая */
+            100% 85%,  /* нижняя правая */
+            90% 100%,  /* нижняя правая */
+            0% 100%,   /* нижняя левая */
+            0% 100%      /* нижняя левая */
+        );
+}
+
+.platforms-button {
+    background-color: black;
+    font-family: "Roboto Regular";
+    font-weight: 700;
+    font-size: 24px;
+    width: fit-content;
+    padding: 20px 50px;
+    margin-top: 30px;
+}
+
+.platforms a {
+    text-decoration: none;
+    color: #F8F200;
+}
+
+h1 {
+    font-family: "Archangelsk";
+    font-size: 62px;
+    font-weight: 400;
+}
+
+.nightcity p {
+    color: #777777;
+}
+
+.blue {
+    font-weight: 700;
+    color: #52BEDC;
+}
+
+.nightcity-textblock {
+    max-width: 1000px;
+}
+
+.nightcity-images {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.nightcity-small-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nightcity-images img{
+    width: 100%;
+}
+
+.nightcity-small-images .nightcity-image {
+    margin-right: 30px;
+    clip-path: 
+        polygon(
+            0% 25%,     /* верхняя левая */
+            12% 0%,     /* верхняя левая */
+            100% 0%,    /* верхняя правая */
+            100% 0%,   /* верхняя правая */
+            100% 75%,  /* нижняя правая */
+            88% 100%,  /* нижняя правая */
+            0% 100%,   /* нижняя левая */
+            0% 100%      /* нижняя левая */
+        );
+}
+
+.nightcity-big-image {
+    clip-path: 
+    polygon(
+        0% 12%,     /* верхняя левая */
+        7% 0%,     /* верхняя левая */
+        100% 0%,    /* верхняя правая */
+        100% 0%,   /* верхняя правая */
+        100% 88%,  /* нижняя правая */
+        93% 100%,  /* нижняя правая */
+        0% 100%,   /* нижняя левая */
+        0% 100%      /* нижняя левая */
+    );
+}
+
+p {
+    line-height: 34px;
+    margin-bottom: 50px;
+    max-width: 952px;
+}
+
+.paint{
+    overflow: hidden;
+    margin-top: -1px;
+}
+
+.paint img{
+    width: auto
+}
+
+.raffle {
+    background-color: black;
+    color:white;
+    padding-bottom: 75px;
+}
+
+.raffle-right-block {
+    display: none;
+}
+
+.raffle h1 img{
+    position: relative;
+    top: 20px;
+    margin-right: 30px;
+}
+
+.raffle h1 {
+    margin-top: 0;
+}
+
+.form {
+    display: flex;
+}
+
+.raffle-image img {
+    width: 100%;
+}
+
+input {
+    display: block;
+    background-color: black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #777777;
+    width: 460px;
+    height: 35px;
+    font-family: "Roboto Regular";
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.screenshot {
+    position: relative;
+    border: 1px dashed #777777;
+    height: 120px;
+    width: 460px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.format{
+    font-size: 12px;
+}
+
+input[type=file]{
+    display: none;
+}
+
+#submit {
+    background-color: #F8F200;
+    font-family: "Roboto Regular";
+    font-weight: 700;
+    font-size: 18px;
+    width: fit-content;
+    padding: 20px 50px;
+    margin-top: 35px;
+    border: 0;
+    margin-bottom: 15px;
+}
+
+#agreement {
+    display: none;
+}
+#agreement+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+#agreement+label::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #777777;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+#agreement:checked+label::before {
+    background-image: url(images/checked.svg);
+    background-size: 12px;
+}
+
+.hp {
+    background-color: #F8F200;
+    padding-bottom: 75px;
+}
+
+.hp .content {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+}
+
+.hp-image-block {
+    align-items: center;
+    margin-top: 75px;
+    flex-shrink: 1;
+    flex: 1;
+}
+
+.hp-text-block {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-shrink: 1;
+    flex: 1;
+}
+
+.logos, .screen {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 540px;
+    column-gap: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.logos div {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.logos img {
+    height: 100%;
+}
+
+.screen img {
+    width: 100%;
+}
+
+.hp-text-block p {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    position: relative;
+    padding-left: 42px;
+    padding-bottom: 30px;
+}
+
+
+ul li::before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 32px;
+    height: 32px;
+}
+
+.hp-list-item1::before {
+    background-image: url("images/icon1.png");
+}
+
+.hp-list-item2::before {
+    background-image: url("images/icon2.png");
+}
+
+.hp-list-item3::before {
+    background-image: url("images/icon3.png");
+}
+
+.more-button {
+    background-color: black;
+    font-family: "Roboto Regular";
+    font-weight: 700;
+    font-size: 18px;
+    width: fit-content;
+    padding: 20px 50px;
+}
+
+.hp-text-block a{
+    color: #F8F200;
+    text-decoration: none;
+}
+
+.buy {
+    display: flex;
+    background-color: black;
+}
+
+.buy-image {
+    background-image: url(images/buy-image.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 717px;
+    background-size: cover;
+}
+
+.buy-image img{
+    display: none;
+}
+
+.buy-text-block {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.buy-text-block h1 {
+    color: white;
+}
+
+.buy .blue {
+    font-size: 24px;
+}
+
+.buy ul {
+    margin-top: 25px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.buy-list-item1::before {
+    background-image: url("images/buy-icon1.png");
+}
+
+.buy-list-item2::before {
+    background-image: url("images/buy-icon2.png");
+}
+
+.buy-list-item3::before {
+    background-image: url("images/buy-icon3.png");
+}
+
+.platform-icons {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 350px;
+    align-items: center;
+    padding-top: 25px;
+    row-gap: 45px;
+}
+
+.xbox, .ps {
+    flex-basis: 49%;
+    margin-left: 75px;
+}
+
+footer .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-logos {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    align-items: center;
+    column-gap: 35px;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 40px;
+}
+
+.footer-buttons a{
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    color: black;
+    text-decoration: none;
+}
+
+.lower-footer {
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+@media (max-width: 1366px) {
+    .content {
+        margin: 0 10%;
+    }
+    footer .content {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content {
+        margin: 0 36px;
+    }
+
+    .nightcity-textblock {
+        max-width: 788px;
+    }
+
+    .nightcity-textblock h1 {
+        max-width: 620px;
+    }
+
+    .nightcity-images {
+        flex-wrap: wrap;
+    }
+    
+    .nightcity-small-images {
+        flex-direction: row;
+        padding-bottom: 30px;
+        column-gap: 30px;
+    }
+
+    .nightcity-small-images .nightcity-image{
+        margin: 0;
+    }
+
+    .nightcity-big-image {
+        flex-grow: 1;
+    }
+
+    .raffle h1, .raffle p, form{
+        max-width: 460px;
+    }
+
+    .raffle h1 img {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .raffle-image {
+        display: none;
+    }
+
+    .raffle-right-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 120px;
+        padding-left: 20px;
+        width: 100%;
+    }
+
+    .raffle-right-block img {
+        width: 100%;
+    }
+
+    .raffle .content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ps-picture {
+        margin-top: -80px;
+    }
+
+    .logos {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .logos img {
+        height: 105%;
+        width: 105%;
+    }
+
+    .hp-image-block {
+        margin-top: 120px;
+    }
+
+    .buy-text-block {
+        flex: 2;
+    }
+
+    footer .content {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .content {
+        justify-content: center;
+    }
+
+    .footer-logos{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 230px;
+    }
+
+    .footer-logos img{
+        width: 100%;
+    }
+
+    .upper-block {
+        justify-content: center;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    .platforms {
+        width: 100%;
+        bottom: -200px;
+    }
+
+    header {
+        margin-bottom: 300px;
+    }
+    p, h1{
+        padding: 0 12px;
+    }
+
+    input, label, #submit {
+        margin-left: 12px;
+    }
+
+    .screenshot {
+        left: 12px;
+    }
+
+    input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .buy {
+        flex-direction: column;
+    }
+
+    .buy-image {
+        background-position: center;
+    }
+
+    .buy-image img{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        margin-bottom: 120px;
+        height: 713px;
+    }
+
+    h1, .platforms{
+        font-size: 30px;
+    }
+
+    .platforms {
+        height: 207px;
+        padding: 30px;
+        text-align: center;
+        bottom: -50px;
+    }
+
+    .platforms-button {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+    }
+
+    .social {
+        width: 100%;
+        padding: 0 12px;
+        column-gap: normal;
+    }
+
+    .hp .content {
+        flex-direction: column;
+    }
+
+    .logos {
+        flex-direction: row;
+    }
+
+    .logos div {
+        flex-basis: content;
+    }
+
+    .hp-image-block {
+        padding: 0 12px;
+    }
+
+    .hp-text-block {
+        margin: 0 12px;
+    }
+
+    .hp-text-block h1, .hp-text-block p, .buy-text-block h1, .buy-text-block p {
+        padding: 0;
+    }
+
+    .buy-text-block {
+        padding: 0 12px;
+    }
+
+    .platform-icons {
+        width: 296px;
+        margin-bottom: 64px;
+    }
+
+    .xbox, .ps {
+        margin-left: 50px;
+    }
+    
+    .footer-logos {
+        padding: 0 60px;
+        box-sizing: border-box;
+        padding-top: 20px;
+    }
+
+    .cd-projekt {
+        width: 116.25px;
+    }
+
+    .footer-buttons {
+        width: 100%;
+        background-color: #E6E6E6;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .footer-buttons a{
+        height: 32px;
+        line-height: 32px;
+    }
+}
