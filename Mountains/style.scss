@@ -376,6 +376,7 @@ a {
     column-gap: 20px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    margin-bottom: 50px;
 }
 
 @mixin popular__block {
@@ -385,7 +386,6 @@ a {
     background-size: cover;
     background-position: center;
     position: relative;
-    margin-bottom: 50px;
     .desc:hover {
         height: 100%;
         border-radius: 32px;
@@ -397,7 +397,6 @@ a {
         max-width: 285px;
         min-width: 285px;
         max-height: 400px;
-        margin-bottom: 32px;
     }
 }
 
@@ -1004,7 +1003,8 @@ a {
     }
 
     .blog-items {
-        padding-bottom: 32px;
+        padding-bottom: 0px;
+        margin-bottom: 32px;
     }
 
     .blog-items__item {
@@ -1166,6 +1166,10 @@ a {
     }
 
     .popular__title2 {
+        margin-bottom: 32px;
+    }
+
+    .popular__images {
         margin-bottom: 32px;
     }
 
