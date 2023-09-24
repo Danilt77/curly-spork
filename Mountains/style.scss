@@ -41,6 +41,9 @@ $black-blue: #18121E;
     @media (max-width: 1024px) {
         width: calc(100% + -32px);
     }
+    @media (max-width: 320px) {
+        width: calc(100% + -16px);
+    }
 }
 
 @mixin button () {
