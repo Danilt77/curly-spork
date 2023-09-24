@@ -711,8 +711,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px 20px;
-  padding-bottom: 50px;
-  overflow-x: scroll;
+  margin-bottom: 50px;
 }
 
 .blog-items__item {
@@ -1198,6 +1197,10 @@ a {
 @media (max-width: 1200px) {
   .header-form {
     display: none;
+  }
+
+  .blog-items {
+    overflow-x: auto;
   }
 
   .pinterest__img1, .pinterest__img5 {
