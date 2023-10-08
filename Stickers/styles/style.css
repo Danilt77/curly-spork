@@ -830,18 +830,21 @@ h2 {
   }
 }
 
-#infinity {
-  position: relative;
-  right: 21px;
-  width: 132px;
-  height: auto;
+@media (max-width: 952px) {
+  #infinity {
+    position: relative;
+    right: 21px;
+    width: 132px;
+    height: auto;
+  }
 }
 
-#planet, #zombie {
-  position: relative;
-  right: 12px;
+@media (max-width: 952px) {
+  #planet, #zombie {
+    position: relative;
+    right: 12px;
+  }
 }
-
 #zombie {
   position: absolute;
   left: -32px;
