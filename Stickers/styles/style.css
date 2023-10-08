@@ -850,11 +850,13 @@ h2 {
   left: -32px;
 }
 
-.zombie {
-  position: relative;
-  width: 132px;
-  overflow: hidden;
-  border-radius: 12px;
+@media (max-width: 952px) {
+  .zombie {
+    position: relative;
+    width: 132px;
+    overflow: hidden;
+    border-radius: 12px;
+  }
 }
 
 .new-wave {
