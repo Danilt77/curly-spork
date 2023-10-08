@@ -845,9 +845,12 @@ h2 {
     right: 12px;
   }
 }
-#zombie {
-  position: absolute;
-  left: -32px;
+
+@media (max-width: 952px) {
+  #zombie {
+    position: absolute;
+    left: -32px;
+  }
 }
 
 @media (max-width: 952px) {
